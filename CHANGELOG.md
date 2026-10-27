@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.14.0](https://github.com/TKDFusion/OpenAstroTracker-Firmware/compare/v1.13.22...v1.14.0) (2026-10-27)
+
+
+### Features
+
+* **rp2040:** 5 kHz stepping, hardware info, SSD1306 display, CI coverage + TMC hold-current fix ([#309](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/309)) ([82b8592](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/82b859232eca8c0e999dcfd1449656cf02449bb5))
+* **rp2040:** add support for JackW01 and BTT SKR Pico boards ([#298](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/298)) ([2f77d61](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/2f77d61fb783f7b1142534da3fbf0d5867171d5e))
+
+
+### Bug Fixes
+
+* AZ ALT drivers staying energized on 0 length moves ([#311](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/311)) ([42d2982](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/42d29825285c1be1ff0f180c3afdc10055e0352e))
+* **guiding:** guide pulses dropped during active pulses + display render delaying pulse end ([#313](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/313)) ([3ad0c21](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/3ad0c21adb27becca56bda4d51da5998018e1e07))
+* Increase MeadeResponse capacity from 64 to 128 ([#297](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/297)) ([7c8ef16](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/7c8ef16b41bfdb04a1737d2a4b582729d24fda6d))
+* **meade:** accept the unsigned site longitude INDI sends ([#304](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/304)) ([1c56888](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/1c568880b97159893c728ab494d20ab7833335a5))
+* **meade:** accept the UTC offset format INDI sends ([#303](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/303)) ([46289c7](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/46289c79f0513d5eeb35f66e9659cace09a2b595))
+* **meade:** build declination from wire components without losing the sign ([#302](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/302)) ([f0e89ff](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/f0e89ff8d873c3240b85baa8f50bf770001f33bf))
+* **meade:** keep the sign of coordinates whose degrees component is zero ([#305](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/305)) ([1760a95](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/1760a950c41fa0c7692a9144759f87fb1041b8c7))
+* **meade:** restore hemisphere conversion for DEC coordinates ([#300](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/300)) ([1c85a37](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/1c85a37c9a9d94c76fec998cb800bc3981740098))
+* **stability:** resolve buffer overflows, EEPROM address collision, ISR races, and memory leaks ([#281](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/281)) ([4b6ff1a](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/4b6ff1ac923d1984cd45402f46c176bd294244d7))
+* use UTC date for LST calculation ([#312](https://github.com/TKDFusion/OpenAstroTracker-Firmware/issues/312)) ([034b190](https://github.com/TKDFusion/OpenAstroTracker-Firmware/commit/034b1907eae935dd23615e60c4b3e57e96f7c1c8))
+
 ## [1.13.22](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/compare/v1.13.21...v1.13.22) (2026-10-05)
 
 
